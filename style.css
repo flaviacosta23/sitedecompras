@@ -8,10 +8,10 @@ body {
     margin: 5px;
 }
 
-#basketImage {
+i {
     position: absolute;
-    right: 16px;
-    top: 16px;
+    right: 20px;
+    top: 30px;
 }
 
 #itemCounter {
