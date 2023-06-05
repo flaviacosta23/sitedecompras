@@ -11,30 +11,39 @@
     <script src="https://kit.fontawesome.com/a9812bd389.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Online Store</h1>
+    <h1>Acampamento Store</h1>
     <i class="fa-solid fa-basket-shopping fa-lg" onclick="clickCart()"></i>
     <h2 id="itemCounter">0</h2>
     <p id="orderTotal"></p>
     <p id="shippingTotal"></p>
 
+ <main>
     <div class="product">
-        <img src="" alt="">
-        <h3>Backpack</h3>
-        <button onclick="addToCart(backpack)">Add to Cart</button>
+        <img src="mochila.jpg" alt="">
+        <h3>Mochila</h3>
+        <button onclick="addToCart(backpack)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="product">
+        <img src="camera.jpg" alt="">
+        <h3>Câmera</h3>
+        <button onclick="addToCart(camera)">Adicionar ao Carrinho</button>
     </div>
 
     <div>
         <img src="" alt="">
-        <h3>Camera</h3>
-        <button onclick="addToCart(camera)">Add to Cart</button>
+        <h3>Barraca de Camping</h3>
+        <button>Adicionar ao Carrinho</button>
     </div>
+</main>   
 
+<footer>
     <div class="container">
         <div class="item">Sobre Nós</div>
         <div class="item">Contato</div>
     </div>
 
     <script src="script.js"></script>
-    
+</footer>   
 </body>
 </html>
