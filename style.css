@@ -1,14 +1,24 @@
 body {
-    color: midnightblue;
+    color: darkolivegreen;
     font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(222, 243, 187);
 }
 
 header {
-    height: 200px;
+    height: 150px;
     width: 100%;
+    background-color: darkolivegreen;
+    color: white;
+    border-radius: 25px;
 }
 
+h1 {
+    position: relative;
+    top: 30%;
+    left: 20%;
+}
 main {
+    margin-top: 25px;
     display: flex;
     flex-direction: row;
     align-items: end;
@@ -24,20 +34,23 @@ main {
 }
 
 img {
-    width: 75%;
-    height: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    border: 1px solid;
 }
 
 i {
     position: absolute;
     right: 20px;
-    top: 30px;
+    top: 40px;
+    color: rgb(216, 165, 36);
 }
 
 #itemCounter {
     position: absolute;
     right: 56px;
-    top: 0px;
+    top: 10px;
 
 }
 
@@ -46,16 +59,25 @@ i {
     text-align: right;
     position: absolute;
     right: 10px;
-    top: 40px;
+    top: 50px;
 }
 
-#shippingTotal {
+#envio {
     margin-right: 16px;
     text-align: right;
     position: absolute;
     z-index: 3;
     right: 10px;
-    top: 60px;
+    top: 70px;
+}
+
+#pedidoFinal {
+    margin-right: 16px;
+    text-align: right;
+    position: absolute;
+    z-index: 3;
+    right: 10px;
+    top: 90px;
 }
 
 .item {
@@ -68,4 +90,5 @@ i {
     align-items: center;
     margin: 30px 5px 5px 5px;
     border: solid 2px;
+    border-radius: 15px;
 }
