@@ -21,6 +21,12 @@ function showTotal() { //essa função define o subtotal, o frete e o valor soma
     const orderTotal = document.getElementById("orderTotal");
     orderTotal.innerHTML = "";
 
+    const enviar = document.getElementById("envio");
+    enviar.innerHTML = "";
+
+    const totalEnvio = document.getElementById("pedidoFinal");
+    totalEnvio.innerHTML = "";
+
     if (isTotalHidden === false) {
         let total = 0;
 
@@ -30,13 +36,11 @@ function showTotal() { //essa função define o subtotal, o frete e o valor soma
         }
         orderTotal.innerHTML = "Subtotal: $" + total; // subtotal dos produtos comprados
 
-        const enviar = document.getElementById("envio");
         enviar.innerHTML = "Envio: $" + calculateTotal(total); //valor do frete
         
 
         let soma = total + calculateTotal(total);
 
-        const totalEnvio = document.getElementById("pedidoFinal");
         totalEnvio.innerHTML = "Total: $" + soma; // valor total = subtotal + frete
 
     }
@@ -72,4 +76,5 @@ function calculateTotal(totalvar) { //função que calcula o valor do frete / se
     }
     return shipping;
 }
+
 

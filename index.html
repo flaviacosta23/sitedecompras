@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Site de Compras</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 
     <!---ICONS-->
     <script src="https://kit.fontawesome.com/a9812bd389.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
+    <img class="logoAventura" src="logositeaventura.png" alt="">
     <h1>Adventure Store</h1>
-    <i class="fa-solid fa-basket-shopping fa-lg" onclick="clickCart()"></i>
+    <i class="fa-solid fa-basket-shopping fa-lg basket" onclick="clickCart()"></i>
     <h2 id="itemCounter">0</h2>
     <p id="orderTotal"></p>
     <p id="envio"></p>
@@ -45,8 +47,8 @@
         <div class="item">Sobre Nós</div>
         <div class="item">Contato</div>
     </div>
+</footer> 
 
-    <script src="script.js"></script>
-</footer>   
+<script src="script.js"></script>
 </body>
 </html>
